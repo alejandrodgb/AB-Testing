@@ -22,12 +22,31 @@ Both evaluation metrics have the same unit of analysis (user-ids) and unit of di
 
 ## Sizing
 ### Number of Samples vs. Power
-Indicate whether you will use the Bonferroni correction during your analysis phase, and give the number of pageviews you will need to power you experiment appropriately. (These should be the answers from the "Calculating Number of Pageviews" quiz.)
+
+The Bonferroni collection will not be used during the analysis phase.
+
+**Test Parameters**
+\alpha = 0.05
+\beta = 0.2
+power = 0.8
+
+
+| Metric | Minimum effect size | Baseline Conversion | Sample Size (per group) | Pageviews |
+|--------|---------------------|---------------------|-------------------------|-----------|
+| Gross conversion | 0.01      |    0.20625          |  25,835                 | 645,875   |
+| Net conversion |   0.0075    | 0.1093125           |  27,413                 | 685,325   |
+
+Pageviews required = 685,325
 
 ### Duration vs. Exposure
 Indicate what fraction of traffic you would divert to this experiment and, given this, how many days you would need to run the experiment. (These should be the answers from the "Choosing Duration and Exposure" quiz.)
 
 Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?
+
+For this experiment we can divert 50% of the traffic. This will allow us to obtain results in a reasonable time while not exposign the entirety of the traffic to the experiment and possible errors or unexpected behaviours clients might have.
+
+Fraction of traffic diverted = 0.5
+Days needed to run the experiment = 35
 
 # Experiment Analysis
 ## Sanity Checks
