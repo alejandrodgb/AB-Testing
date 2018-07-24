@@ -73,13 +73,31 @@ Days needed to run the experiment = 35
 
 
 ### Sign Tests
-For each of your evaluation metrics, do a sign test using the day-by-day data, and report the p-value of the sign test and whether the result is statistically significant. (These should be the answers from the "Sign Tests" quiz.)
+
+| Metric | P-Value | Statistical Significance |
+|--------|---------|--------------------------|
+| Gross conversion | 0.0026 | True |
+| Net conversion | 0.6776 | False |
 
 ### Summary
-State whether you used the Bonferroni correction, and explain why or why not. If there are any discrepancies between the effect size hypothesis tests and the sign tests, describe the discrepancy and why you think it arose.
+
+An experiment was conducted to test whether the addition of an information screen would reduce the number of time-poor students that start a free trial. Fifty percent of traffic was diverted to a control and experimental group in approximately equal proportions. 
+
+The analysis conducted revealed a statistical and practical significant difference between the control and experimental group for gross conversion. In addition, the sign test confirmed consistent differences in the daily gross conversion between the control and experimental group. 
+Net conversion, on the other hand, was only found to have statistical significance but not practical significance. Daily results did not show consistent differences either between the control and experimental group.
+
+Bonferroni correction was not used as it would deliver too conservative results increasing the required nubmer of page views to obtain statistically significant results. Given that this is a low-risk experiment for Udacity, the investment required to allow for Bonferroni correction would not be worth the value added by this technique.
 
 ## Recommendation
-Make a recommendation and briefly describe your reasoning.
+
+Based on the experiment results I would not recommend to implement the change. The experiment showed that the number of paid clients did not increase with the change. 
 
 # Follow-Up Experiment
-Give a high-level description of the follow up experiment you would run, what your hypothesis would be, what metrics you would want to measure, what your unit of diversion would be, and your reasoning for these choices.
+
+- Experiment goal: to increase the number of paid students.
+- Experiment hypothesis: offering three levels of courses (of increasing difficulty and time commitment requirements) will increase the number of paid students and completed degrees. 
+- Experiment description: by offering varying levels of 'certification', Udacity will be able to capture more students that have varying levels of time availability and commitment.
+- Metrics:
+-- Overall net conversion: the number of user-ids that remain enrolled past the 14-day boundary divided by the number of cookies that click the "start free trial" button. This metric would indicate whether the overall revenue of courses would increase.
+-- Click through probability by certification level: the number of unique cookies that click the "start free trial" button divided by the number of unique cookies that see the page. This metric would indicate whether there is a specific level that people seem to be interested in and help segment our target market.
+-- Net conversion by certification level: the number of user-ids that remain enrolled past the 14-day boundary divided by the number of cookies that click the "start free trial" button by certification level. This metric would indicate whether there is a certification level that is more interesting for new student than others.
