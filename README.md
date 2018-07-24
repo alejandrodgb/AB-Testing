@@ -26,8 +26,11 @@ Both evaluation metrics have the same unit of analysis (user-ids) and unit of di
 The Bonferroni collection will not be used during the analysis phase.
 
 **Test Parameters**
+
 alpha = 0.05
+
 beta = 0.2
+
 power = 0.8
 
 
