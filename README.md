@@ -64,7 +64,12 @@ Days needed to run the experiment = 35
 
 ## Result Analysis
 ### Effect Size Tests
-For each of your evaluation metrics, give a 95% confidence interval around the difference between the experiment and control groups. Indicate whether each metric is statistically and practically significant. (These should be the answers from the "Effect Size Tests" quiz.)
+
+| Metric | Lower Bound | Upper Bound | Statistically Significant | Practically Significant |
+|--------|-------------|-------------|----------|--------|
+| Gross conversion | -0.0291 | -0.0119 | True  | True |
+| Net conversion | -0.0116 | 0.0019 | True | False |
+
 
 ### Sign Tests
 For each of your evaluation metrics, do a sign test using the day-by-day data, and report the p-value of the sign test and whether the result is statistically significant. (These should be the answers from the "Sign Tests" quiz.)
