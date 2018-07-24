@@ -1,8 +1,17 @@
 # Experiment Design
 ## Metric Choice
 List which metrics you will use as invariant metrics and evaluation metrics here. (These should be the same metrics you chose in the "Choosing Invariant Metrics" and "Choosing Evaluation Metrics" quizzes.)
-
 For each metric, explain both why you did or did not use it as an invariant metric and why you did or did not use it as an evaluation metric. Also, state what results you will look for in your evaluation metrics in order to launch the experiment.
+
+| Metric | Metric Type | Comments |
+|--------|-------------|----------|
+| Number of cookies | Invariant | The number of cookies to view the source page will not be affected by the experiment as the experiment happens after the page loads. |
+| Number of clicks | Invariant | This is the event that will trigger the new screen, the same amount of cookies should appear in the control and experiment groups. |
+| Gross conversion | Evaluation | This metric will provide a good estimation of the effect of the new screen. If the experiment is successful, the gross conversion will be lower in the experiment than in the control group as it will eliminate students that do not have the necessary time availability. |
+| Net conversion | Evaluation | This metric will provide a good estimation of the effect of the new screen. If the experiment is successful, the net conversion will increase as more students with the necessary time availability will remain in the course out of the total number of cookies that trigger the experiment. |
+| Number of user-ids | N/A | This metric was not used as will be affected by the experiment (not invariant) yet does not provide a good comparison between the control and experiment groups for the experiment. |
+| Click-through probability | N/A | This metric could have been used as an invariant metric as it is not affected by the experiment; however, having two invariant metrics was sufficient. |
+| Retention | N/A | This metric could have been used as an evaluation metric; hoever, the amount of observations required to make the experiment powerfull enough would have taken too long to collect and was not practical. |
 
 ## Measuring Standard Deviation
 List the standard deviation of each of your evaluation metrics. (These should be the answers from the "Calculating standard deviation" quiz.)
