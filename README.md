@@ -27,11 +27,9 @@ The Bonferroni collection will not be used during the analysis phase.
 
 **Test Parameters**
 
-alpha = 0.05
-
-beta = 0.2
-
-power = 0.8
+- alpha = 0.05
+- beta = 0.2
+- power = 0.8
 
 
 | Metric | Minimum effect size | Baseline Conversion | Sample Size (per group) | Pageviews |
