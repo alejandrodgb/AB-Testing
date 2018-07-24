@@ -1,7 +1,5 @@
 # Experiment Design
 ## Metric Choice
-List which metrics you will use as invariant metrics and evaluation metrics here. (These should be the same metrics you chose in the "Choosing Invariant Metrics" and "Choosing Evaluation Metrics" quizzes.)
-For each metric, explain both why you did or did not use it as an invariant metric and why you did or did not use it as an evaluation metric. Also, state what results you will look for in your evaluation metrics in order to launch the experiment.
 
 | Metric | Metric Type | Comments |
 |--------|-------------|----------|
