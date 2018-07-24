@@ -26,8 +26,8 @@ Both evaluation metrics have the same unit of analysis (user-ids) and unit of di
 The Bonferroni collection will not be used during the analysis phase.
 
 **Test Parameters**
-\alpha = 0.05
-\beta = 0.2
+alpha = 0.05
+beta = 0.2
 power = 0.8
 
 
@@ -39,20 +39,28 @@ power = 0.8
 Pageviews required = 685,325
 
 ### Duration vs. Exposure
-Indicate what fraction of traffic you would divert to this experiment and, given this, how many days you would need to run the experiment. (These should be the answers from the "Choosing Duration and Exposure" quiz.)
-
-Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?
-
 For this experiment we can divert 50% of the traffic. This will allow us to obtain results in a reasonable time while not exposign the entirety of the traffic to the experiment and possible errors or unexpected behaviours clients might have.
+
+Overall, this experiment presents a Low level of risk for Udacity. Identified risks have been outlined below:
+
+Likelihood and impact measured from 1 (lowest) to 5 (highest)
+
+| Risk | Likelihood | Impact | Risk Level     |
+|------|------------|--------|----------------|
+| New screen does not load | 1 | 3 | Low |
+| Faulty experimental setup impedes users from registering | 1 | 5 | Medium |
+| Evaluation metrics not properly captured | 2 | 3 | Low |
 
 Fraction of traffic diverted = 0.5
 Days needed to run the experiment = 35
 
 # Experiment Analysis
 ## Sanity Checks
-For each of your invariant metrics, give the 95% confidence interval for the value you expect to observe, the actual observed value, and whether the metric passes your sanity check. (These should be the answers from the "Sanity Checks" quiz.)
 
-For any sanity check that did not pass, explain your best guess as to what went wrong based on the day-by-day data. Do not proceed to the rest of the analysis unless all sanity checks pass.
+| Metric | Lower Bound | Upper Bound | Observed | Passes |
+|--------|-------------|-------------|----------|--------|
+| Number of cookies | 0.4988 | 0.5011 | 0.5006 | True |
+| Number of clicks on "Start free trial" | 0.4959 | 0.5041 | 0.5005 | True |
 
 ## Result Analysis
 ### Effect Size Tests
