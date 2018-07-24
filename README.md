@@ -12,9 +12,13 @@
 | Retention | N/A | This metric could have been used as an evaluation metric; hoever, the amount of observations required to make the experiment powerfull enough would have taken too long to collect and was not practical. |
 
 ## Measuring Standard Deviation
-List the standard deviation of each of your evaluation metrics. (These should be the answers from the "Calculating standard deviation" quiz.)
 
-For each of your evaluation metrics, indicate whether you think the analytic estimate would be comparable to the the empirical variability, or whether you expect them to be different (in which case it might be worth doing an empirical estimate if there is time). Briefly give your reasoning in each case.
+| Metric | Standard Deviation |
+|--------|--------------------|
+| Gross conversion | 0.0202 |
+| Net conversion | 0.0156 |
+
+Both evaluation metrics have the same unit of analysis (user-ids) and unit of diversion (cookies). We can expect the analytical and empirical standard deviation to be similar as user-ids and unique cookies should be very similar. Hoever, it does exist the possibility that a user would login under a different browser or click the "Start free trial" button in two different days. To ensure accuracy it would be recommendable to test the standard deviation.
 
 ## Sizing
 ### Number of Samples vs. Power
