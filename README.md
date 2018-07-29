@@ -3,13 +3,14 @@
 
 | Metric | Metric Type | Comments |
 |--------|-------------|----------|
-| Number of cookies | Invariant | The number of cookies to view the source page will not be affected by the experiment as the experiment happens after the page loads. |
-| Number of clicks | Invariant | This is the event that will trigger the new screen, the same amount of cookies should appear in the control and experiment groups. |
-| Gross conversion | Evaluation | This metric will provide a good estimation of the effect of the new screen. If the experiment is successful, the gross conversion will be lower in the experiment than in the control group as it will eliminate students that do not have the necessary time availability. |
-| Net conversion | Evaluation | This metric will provide a good estimation of the effect of the new screen. If the experiment is successful, the net conversion will increase as more students with the necessary time availability will remain in the course out of the total number of cookies that trigger the experiment. |
-| Number of user-ids | N/A | This metric was not used as will be affected by the experiment (not invariant) yet does not provide a good comparison between the control and experiment groups for the experiment. |
-| Click-through probability | N/A | This metric could have been used as an invariant metric as it is not affected by the experiment; however, having two invariant metrics was sufficient. |
-| Retention | N/A | This metric could have been used as an evaluation metric; hoever, the amount of observations required to make the experiment powerfull enough would have taken too long to collect and was not practical. |
+| Number of cookies | Invariant | Used as invariant as it is randomised between control and experiment group and is constrant thoughout the experiment. Not used as evaluationa as the experiment will have no effect on this metric. |
+| Number of clicks | Invariant | Used as invariant as it is randomised between control and experiment group and is constant throughout the experiment. Not used as evaluation as the experiment will have no effect on this metric. |
+| Gross conversion | Evaluation | This metric will provide a good estimation of the effect of the new screen. If the experiment is successful, the gross conversion will be lower in the experiment than in the control group as it will eliminate students that do not have the necessary time availability. This metric was not used as invariant metric as the dividend is directly affected by the experiment. User-id is only tracked if the user enrolls in the free trial, which happens after the new
+window appears. | 
+| Net conversion | Evaluation | This metric will provide a good estimation of the effect of the new screen. If the experiment is successful, the net conversion will increase as more students with the necessary time availability will remain in the course out of the total number of cookies that trigger the experiment. As with gross conversion, the dividend is directly affected by the experiment. User-id is only tracked if the user enrolls in the free trial. |
+| Number of user-ids | N/A | This metric was not used as an invariant metric because it  will be affected by the experiment. It was not used as an evaluation metric either as it does not provide a good comparison between the control and experiment groups for the experiment given that it will provide absolute values. Absolute values, while they could be useful, they will miss the goal of the experiment of reducing the number of enrollments for students that do not have enough time to complete the course. |
+| Click-through probability | N/A | This metric could have been used as an invariant metric as it is not affected by the experiment; however, having two invariant metrics was sufficient. It could not have been used as an evaluation metric as it will not be affected by the experiment. |
+| Retention | N/A | This metric could have been used as an evaluation metric; however, the amount of observations required to make the experiment powerfull enough would have taken too long to collect and was not practical. It could not have been used as an invariant metric as it was affected by the experiment and the results would not have been comparable for the experiment and control group. |
 
 ## Measuring Standard Deviation
 
