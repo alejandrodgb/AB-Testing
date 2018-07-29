@@ -12,6 +12,8 @@ window appears. |
 | Click-through probability | N/A | This metric could have been used as an invariant metric as it is not affected by the experiment; however, having two invariant metrics was sufficient. It could not have been used as an evaluation metric as it will not be affected by the experiment. |
 | Retention | N/A | This metric could have been used as an evaluation metric; however, the amount of observations required to make the experiment powerfull enough would have taken too long to collect and was not practical. It could not have been used as an invariant metric as it was affected by the experiment and the results would not have been comparable for the experiment and control group. |
 
+To launch this experiment, we expect gross conversion to decrease and net conversion to increase. A decrease in gross conversion will indicate only students with the sufficient time availability will enroll in the free trial. An increase in net conversion will indicate a lower number of students dropping out of the course in the free trial period and committing to pay for the course.
+
 ## Measuring Standard Deviation
 
 | Metric | Standard Deviation |
