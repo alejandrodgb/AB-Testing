@@ -54,6 +54,7 @@ Likelihood and impact measured from 1 (lowest) to 5 (highest)
 | New screen does not load | 1 | 3 | Low |
 | Faulty experimental setup impedes users from registering | 1 | 5 | Medium |
 | Evaluation metrics not properly captured | 2 | 3 | Low |
+| Identified data being exposed (user-id) | 1 | 4 | Low |
 
 Fraction of traffic diverted = 0.5
 Days needed to run the experiment = 35
@@ -102,5 +103,8 @@ Based on the experiment results I would not recommend to implement the change. T
 * Experiment description: by offering varying levels of 'certification', Udacity will be able to capture more students that have varying levels of time availability and commitment.
 * Metrics:
   * Overall net conversion: the number of user-ids that remain enrolled past the 14-day boundary divided by the number of cookies that click the "start free trial" button. This metric would indicate whether the overall revenue of courses would increase.
+    * Unit of diversion: user-id. User-id was selected as unit of diversion to indicate the overall revenue over all courses as it will help identify the specific users that have enrolled in a specific course.
   * Click through probability by certification level: the number of unique cookies that click the "start free trial" button divided by the number of unique cookies that see the page. This metric would indicate whether there is a specific level that people seem to be interested in and help segment our target market.
+    * Unit of diversion: unique cookie. This will help identify for each "certification" level the level of interest. This should help us pinpoint which of the levels is more popular.
   * Net conversion by certification level: the number of user-ids that remain enrolled past the 14-day boundary divided by the number of cookies that click the "start free trial" button by certification level. This metric would indicate whether there is a certification level that is more interesting for new student than others.
+    * Unit of diversion: user-id. This will allow us to recognise the number of users that commit to pay by certification level. Given that the data is identified, we will also be able to learn what type of demographic prefers each certification level.
